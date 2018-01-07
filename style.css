@@ -176,12 +176,15 @@ li {
     margin: auto;
     padding-bottom: 25px;
     padding-top: 40px;
+    text-align: left;
+    width: 70%;
+    padding: 10px;
 }
 
 #cv_container {
     width: 70%;
     margin: auto;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
 }
@@ -194,11 +197,12 @@ li {
 }
 
 #cv_billede {
-    flex-wrap: wrap;
     margin: auto;
     width: 30%;
     padding-left: 40px;
     padding-right: 40;
+    flex-basis: 250px;
+    flex-grow: 1;
 }
 
 #cv_billede p {
@@ -212,6 +216,8 @@ li {
 #cv_billede img {
     width: 100%;
     margin: auto;
+    flex-grow: 1;
+    flex-basis: 300px;
 }
 
 /********************* STILARTSITE.HTML ************************/
