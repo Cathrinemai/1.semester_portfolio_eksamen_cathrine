@@ -8,7 +8,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-
 /********************* SPLASH ************************/
 
 #splash img {
@@ -51,19 +50,18 @@ li {
     width: 100%;
 }
 
-.column p {
-    text-align: center;
-}
 
 .vaerktojer {
     width: 70%;
     margin: auto;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .vaerktojer h2 {
     font-size: 18px;
 }
+
+
 
 #menu h1 {
     padding-top: 30px;
@@ -115,6 +113,11 @@ li {
     font-size: 1vw;
     color: #ffffff;
     border-radius: 4px;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 #knapper {
@@ -264,6 +267,10 @@ li {
     width: 100%;
 }
 
+#stilartsite .vaerktojer img {
+    width: 38%;
+}
+
 #stilartsite p {
     font-size: 18px;
     margin: 0 auto;
@@ -311,6 +318,10 @@ li {
 
 /********************* REDESIGN.HTML ************************/
 
+#redesign .vaerktojer img {
+    width: 38%;
+}
+
 #redesign_tekst {
     width: 100%;
 }
@@ -347,6 +358,10 @@ li {
 }
 
 /********************* DYKKERPIGE.HTML ************************/
+
+#dykkerpige .vaerktojer img {
+    width: 55%;
+}
 
 #dykkerpige {
     width: 100%;
@@ -401,6 +416,10 @@ li {
 
 /****************** SEX&SAMFUND.HTML *********************/
 
+#sexogsamfund .vaerktojer img {
+    width: 55%;
+}
+
 #sexogsamfund {
     width: 100%;
 }
@@ -447,6 +466,10 @@ li {
 
 /********************* BIGBEN.HTML ************************/
 
+#bigben .vaerktojer img {
+    width: 28%;
+}
+
 #bigben {
     width: 100%;
 }
@@ -478,6 +501,10 @@ li {
 
 /********************* CPH:DOX.HTML ************************/
 
+#cphdox .vaerktojer img {
+    width: 28%;
+}
+
 #cphdox {
     width: 100%;
 }
@@ -505,6 +532,10 @@ li {
 
 /********************* KEAN.HTML ************************/
 
+#kean .vaerktojer img {
+    width: 42vw;
+}
+
 #kean {
     width: 100%;
 }
@@ -520,41 +551,43 @@ li {
 
 #kean_tekst {
     flex-wrap: wrap;
-    margin: auto;
+    margin: 0 auto;
     width: 70%;
 }
 
-.kean_punkter {
-    padding: 20px;
-}
-
-.kean_billede img {
-    width: 100%;
-    margin: auto;
-}
-
-#kean_container {
+.kean_container {
     width: 70%;
-    margin: auto;
-    flex-wrap: nowrap;
+    margin: 0 auto;
+    flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-bottom: 20px;
 }
 
-.kean_column_left img {
+.kean_samlet {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    margin: auto;
-    padding-right: 10px;
 }
 
-.kean_column_right img {
-    width: 130%;
+.kean_column {
+    flex-basis: 300px;
+    flex-grow: 1;
+    padding-bottom: 15px;
     margin: auto;
-    padding: 10px;
 }
+
+.kean_column img {
+    width: 90%;
+}
+
+
 
 /********************* REPUBLIKKEN.HTML ************************/
+
+#republikken .vaerktojer img {
+    width: 42vw;
+}
 
 #republikken {
     width: 100%;
@@ -576,17 +609,15 @@ li {
 }
 
 .republikken_billede {
-    width: 70%;
-    margin: auto;
-    flex-wrap: nowrap;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
+    width: 100%;
+    flex-basis: 300px;
+    flex-grow: 1;
+    text-align: center;
 }
 
 .republikken_billede img {
-    width: 100%;
-    margin: auto;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .republikken_column img {
@@ -605,10 +636,6 @@ li {
 }
 
 /********************* FOOTER ************************/
-
-.vaerktojer img {
-    width: 30vw;
-}
 
 footer {
     font-family: 'Roboto', sans-serif;
