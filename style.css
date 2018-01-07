@@ -24,7 +24,7 @@ body {
 
 h1 {
     font-size: 45px;
-    color: #33485A;
+    color: #3E4A59;
     margin-left: 20px;
     text-align: center;
 }
@@ -32,24 +32,23 @@ h1 {
 h2 {
     font-size: 15px;
     margin-left: 20px;
-    color: #33485A;
+    color: #3E4A59;
 }
 
 h3 {
     font-size: 30px;
-    color: #33485A;
+    color: #3E4A59;
     margin-left: 20px;
     text-align: center;
 }
 
 ul,
 li {
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 15px;
-    color: #33485A;
+    color: #3E4A59;
     width: 100%;
 }
-
 
 .vaerktojer {
     width: 70%;
@@ -58,49 +57,18 @@ li {
 }
 
 .vaerktojer h2 {
-    font-size: 18px;
+    font-size: 20px;
+    color: #3E4A59;
 }
-
-
 
 #menu h1 {
     padding-top: 30px;
 }
 
-/********************* font slut ************************/
-
-/*
-.column {
-    flex-basis: 300px;
-    flex-grow: 1;
-}
-
-.portflex {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    justify-content: center;
-}
-
-
-.portflex a {
-    flex-basis: 300px;
-    flex-grow: 1;
-    text-align: center;
-}
-
-
-.titelapp {
-    text-align: center;
-}
-
-.titelapp p {
+p {
+    color: #3E4A59;
     font-size: 18px;
-    margin: 0 auto;
-    color: #33485A;
-    width: 70%;
 }
-*/
 
 /********************* KNAPPER ************************/
 
@@ -137,16 +105,6 @@ button:hover {
     display: flex;
     justify-content: space-around;
 }
-
-/*
-.projekt_portflex {
-    flex-basis: 300px;
-    flex-grow: 1;
-    margin: 0 auto;
-    width: 80%;
-    padding-right: 40px;
-}
-*/
 
 .box {
     flex-basis: 300px;
@@ -210,7 +168,6 @@ button:hover {
     color: #33485A;
     padding: 10px;
     width: 105%;
-
 }
 
 #cv h1 {
@@ -239,9 +196,7 @@ button:hover {
 
 #cv_billede {
     margin: auto;
-    width: 30%;
-    padding-left: 40px;
-    padding-right: 40;
+    width: 100%;
     flex-basis: 250px;
     flex-grow: 1;
 }
@@ -250,15 +205,17 @@ button:hover {
     font-size: 15px;
     margin: 0 auto;
     color: #33485A;
-    padding: 2px;
+    padding: 10px;
+    padding-right: 20px;
     width: 105%;
 }
 
 #cv_billede img {
-    width: 100%;
+    width: 80%;
     margin: auto;
     flex-grow: 1;
     flex-basis: 300px;
+    padding: 10px;
 }
 
 /********************* STILARTSITE.HTML ************************/
@@ -291,29 +248,38 @@ button:hover {
 .stilartsite_tekst img {
     width: 100%;
     margin: auto;
+    padding-bottom: 10px;
 }
 
-#stilartsite .container {
+.container {
     width: 70%;
     margin: auto;
-    flex-wrap: nowrap;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #stilartsite .column_left {
     margin: auto;
     width: 100%;
+    flex-wrap: wrap;
+    flex-basis: 300px;
+    flex-grow: 1;
 }
 
 #stilartsite .column_right {
-    margin: auto;
     width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-basis: 300px;
+    flex-grow: 1;
 }
 
 #stilartsite .column_right img {
-    width: 100%;
+    width: 70%;
     margin: auto;
+    flex-basis: 300px;
+    flex-grow: 1;
 }
 
 /********************* REDESIGN.HTML ************************/
@@ -324,6 +290,10 @@ button:hover {
 
 #redesign_tekst {
     width: 100%;
+}
+
+.kode p {
+    font-size: 13px;
 }
 
 #redesign h1 {
@@ -384,6 +354,18 @@ button:hover {
     width: 70%;
 }
 
+#dykkerpige_tekst_2 {
+    flex-wrap: wrap;
+    margin: auto;
+    width: 70%;
+}
+
+#dykkerpige_tekst_2 img {
+    width: 100%;
+    margin: auto;
+    padding-top: 25px;
+}
+
 #dykkerpige_tekst img {
     width: 100%;
     margin: auto;
@@ -393,7 +375,7 @@ button:hover {
 .container_dykkerpige {
     width: 70%;
     margin: auto;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
@@ -401,17 +383,24 @@ button:hover {
 
 .dykkerpige_column_left {
     width: 100%;
+    flex-wrap: wrap;
     margin: auto;
+    flex-basis: 350px;
+    flex-grow: 1;
 }
 
 .dykkerpige_column_right {
-    width: 100%;
+    width: 70%;
     margin: auto;
+    flex-basis: 350px;
+    flex-grow: 1;
 }
 
 .dykkerpige_column_right img {
     width: 100%;
     margin: auto;
+    flex-basis: 350px;
+    flex-grow: 1;
 }
 
 /****************** SEX&SAMFUND.HTML *********************/
@@ -448,21 +437,25 @@ button:hover {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding-bottom: 10px;
+}
+
+.sexogsamfund_column_left {
+    width: 100%;
+    flex-wrap: wrap;
+    margin: auto;
+    flex-basis: 350px;
+    flex-grow: 1;
 }
 
 .sexogsamfund_column_left img {
     width: 100%;
     margin: auto;
     padding-top: 25px;
+    flex-basis: 350px;
+    flex-grow: 1;
 }
-
-.sexogsamfund_column_right img {
-    width: 100%;
-    margin: auto;
-}
-
 
 /********************* BIGBEN.HTML ************************/
 
@@ -529,7 +522,6 @@ button:hover {
     width: 70%;
 }
 
-
 /********************* KEAN.HTML ************************/
 
 #kean .vaerktojer img {
@@ -577,11 +569,30 @@ button:hover {
     margin: auto;
 }
 
-.kean_column img {
-    width: 90%;
+.kean_mobil img {
+    width: 100%;
+    margin: auto;
 }
 
+.kean_column img {
+    width: 95%;
+}
 
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 100%;
+    flex-basis: 350px;
+    flex-grow: 1;
+}
+
+.column img {
+    width: 100%;
+    height: 90%;
+}
 
 /********************* REPUBLIKKEN.HTML ************************/
 
@@ -608,24 +619,51 @@ button:hover {
     width: 70%;
 }
 
-.republikken_billede {
+.republikke_column {
     width: 100%;
-    flex-basis: 300px;
-    flex-grow: 1;
-    text-align: center;
+    margin: auto;
 }
 
-.republikken_billede img {
+.republikken_column_skaerm img {
     width: 50%;
-    margin: 0 auto;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    padding-bottom: 15px;
 }
 
 .republikken_column img {
     width: 100%;
     margin: auto;
+    text-align: center;
+    display: flex;
+}
+
+.republikken_billede {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+.republikken_column_left {
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-basis: 350px;
+    flex-grow: 1;
 }
 
 .republikken_column_left img {
+    width: 100%;
+    margin: auto;
+    flex-basis: 350px;
+    flex-grow: 1;
+}
+
+.republikke_column_right {
     width: 100%;
     margin: auto;
 }
@@ -633,6 +671,8 @@ button:hover {
 .republikken_column_right img {
     width: 100%;
     margin: auto;
+    text-align: center;
+    display: flex;
 }
 
 /********************* FOOTER ************************/
