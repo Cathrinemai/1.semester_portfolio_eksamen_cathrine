@@ -71,12 +71,7 @@ li {
 
 /********************* font slut ************************/
 
-.portflex img {
-    width: 25vw;
-    height: 15vw;
-    margin: 15px;
-}
-
+/*
 .column {
     flex-basis: 300px;
     flex-grow: 1;
@@ -107,6 +102,7 @@ li {
     color: #33485A;
     width: 70%;
 }
+*/
 
 /********************* KNAPPER ************************/
 
@@ -127,6 +123,44 @@ li {
     width: 100%;
     padding-top: 40px;
     padding-bottom: 30px;
+}
+
+/********************* ALLE_PROJEKTER KNAPPER ************************/
+
+#projekt_container {
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*
+.projekt_portflex {
+    flex-basis: 300px;
+    flex-grow: 1;
+    margin: 0 auto;
+    width: 80%;
+    padding-right: 40px;
+}
+*/
+
+.box {
+    flex-basis: 300px;
+    flex-grow: 1;
+    margin: 0 auto;
+    width: 70%;
+    padding-right: 40px;
+}
+
+.box p {
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+    height: 70%;
+    margin: 15px;
 }
 
 /********************* TEMA KNAPPER ************************/
@@ -541,13 +575,18 @@ li {
     width: 70%;
 }
 
-#republikken_billede {
+.republikken_billede {
     width: 70%;
     margin: auto;
     flex-wrap: nowrap;
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
+}
+
+.republikken_billede img {
+    width: 100%;
+    margin: auto;
 }
 
 .republikken_column img {
